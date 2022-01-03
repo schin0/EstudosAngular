@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Shampoo pet",
+      "price": 5.7
+    },
+    {
+      "id": 2,
+      "name": "Condicionador pet",
+      "price": 7.6
+    },
+    {
+      "id": 3,
+      "name": "Osso",
+      "price": 4.5
+    },
+    {
+      "name": "Coleira",
+      "price": "34.99",
+      "id": 4
+    }
+  ]
+}
