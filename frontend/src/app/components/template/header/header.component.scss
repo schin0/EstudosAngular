@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  .logo {
+    max-width: 32px;
+    margin-right: 25px;
+  }
+  .titulo {
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+}
