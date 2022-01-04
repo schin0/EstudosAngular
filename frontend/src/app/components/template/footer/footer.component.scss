@@ -1,0 +1,19 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 30px; 
+  height: 30px;
+  span {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .logo {
+    margin-right: 10px;
+  }
+  .devs {
+    color: var(--marrom);
+    cursor: pointer;
+  }
+}
