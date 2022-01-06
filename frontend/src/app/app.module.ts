@@ -20,6 +20,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MeuPerfilComponent } from './views/meu-perfil/meu-perfil.component';
+import { SobreComponent } from './views/sobre/sobre.component';
+import { CarrinhoComponent } from './views/carrinho/carrinho.component';
+import { VendasComponent } from './views/vendas/vendas.component';
 
 
 @NgModule({
@@ -32,7 +36,11 @@ import { MatCardModule } from '@angular/material/card';
     ProductCrudComponent,
     DevsComponent,
     DiretivaAtributoDirective,
-    DiretivaEstruturalDirective
+    DiretivaEstruturalDirective,
+    MeuPerfilComponent,
+    SobreComponent,
+    CarrinhoComponent,
+    VendasComponent
   ],
   imports: [
     BrowserModule,
