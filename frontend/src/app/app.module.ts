@@ -10,15 +10,17 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { InicioComponent } from './views/inicio/inicio.component';
+import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { DevsComponent } from './views/desenvolvedores/devs/devs.component';
+import { DiretivaAtributoDirective } from './diretivas/diretiva-atributo.directive';
+import { DiretivaEstruturalDirective } from './diretivas/diretiva-estrutural.directive';
 
 // Material:
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
-import { DevsComponent } from './views/desenvolvedores/devs/devs.component';
-import { DiretivaAtributoDirective } from './diretivas/diretiva-atributo.directive';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { DiretivaAtributoDirective } from './diretivas/diretiva-atributo.directi
     InicioComponent,
     ProductCrudComponent,
     DevsComponent,
-    DiretivaAtributoDirective
+    DiretivaAtributoDirective,
+    DiretivaEstruturalDirective
   ],
   imports: [
     BrowserModule,
