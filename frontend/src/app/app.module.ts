@@ -18,6 +18,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { DevsComponent } from './views/desenvolvedores/devs/devs.component';
+import { DiretivaAtributoDirective } from './diretivas/diretiva-atributo.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DevsComponent } from './views/desenvolvedores/devs/devs.component';
     NavComponent,
     InicioComponent,
     ProductCrudComponent,
-    DevsComponent
+    DevsComponent,
+    DiretivaAtributoDirective
   ],
   imports: [
     BrowserModule,
