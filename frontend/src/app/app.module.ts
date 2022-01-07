@@ -14,17 +14,25 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { DevsComponent } from './views/desenvolvedores/devs/devs.component';
 import { DiretivaAtributoDirective } from './diretivas/diretiva-atributo.directive';
 import { DiretivaEstruturalDirective } from './diretivas/diretiva-estrutural.directive';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { VendasComponent } from './views/vendas/vendas.component';
+import { MeuPerfilComponent } from './views/meu-perfil/meu-perfil.component';
+import { SobreComponent } from './views/sobre/sobre.component';
+import { CarrinhoComponent } from './views/carrinho/carrinho.component';
 
 // Material:
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { MeuPerfilComponent } from './views/meu-perfil/meu-perfil.component';
-import { SobreComponent } from './views/sobre/sobre.component';
-import { CarrinhoComponent } from './views/carrinho/carrinho.component';
-import { VendasComponent } from './views/vendas/vendas.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
+
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -40,7 +48,8 @@ import { VendasComponent } from './views/vendas/vendas.component';
     MeuPerfilComponent,
     SobreComponent,
     CarrinhoComponent,
-    VendasComponent
+    VendasComponent,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +58,13 @@ import { VendasComponent } from './views/vendas/vendas.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
