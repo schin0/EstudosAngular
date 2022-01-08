@@ -1,4 +1,6 @@
+import { ProductService } from './../../components/product/shared/product.service';
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/components/product/shared/product.model';
 
 @Component({
   selector: 'app-vendas',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VendasComponent implements OnInit {
 
-  constructor() { }
+  products: Product[] = [];
+  displayedColumns = ['id', 'name', 'price', 'date', 'qtdVendas', 'view']
+
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.productService.ler().subscribe(products => {
+      this.products = products;
+    });
   }
 
 }
