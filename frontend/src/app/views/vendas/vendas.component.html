@@ -1,1 +1,50 @@
-<p>vendas works!</p>
+<div class="mat-elevation-z8 divTable">
+  <table mat-table [dataSource]='products'>
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Id</th>
+      <td mat-cell *matCellDef="let row">{{row.id}}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Nome</th>
+      <td mat-cell *matCellDef="let row">{{row.name}}</td>
+    </ng-container>
+
+    <!-- Price Column -->
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef>Preço</th>
+      <td mat-cell *matCellDef="let row">{{row.price | currency: 'BRL'}}</td>
+    </ng-container>
+
+    <!-- Date Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Data de cadastro</th>
+      <td mat-cell *matCellDef="let row">{{row.date}}11/01/2021</td>
+    </ng-container>
+
+    <!-- qtdVendas Column -->
+    <ng-container matColumnDef="qtdVendas">
+      <th mat-header-cell *matHeaderCellDef>Quantidade vendida</th>
+      <td mat-cell *matCellDef="let row">
+        {{row.qtdVendas}}32
+      </td>
+    </ng-container>
+
+    <!-- View Column -->
+    <ng-container matColumnDef="view">
+      <th mat-header-cell *matHeaderCellDef>Visualizar produto</th>
+      <td mat-cell *matCellDef="let row">
+        <a routerLink="">
+          <i class="material-icons">
+            visibility
+          </i>
+        </a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
