@@ -1,0 +1,29 @@
+section {
+  display: flex;
+  justify-content: center;
+  .card-product {
+    width: 600px;
+    margin: 15px;
+    mat-card-header {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    mat-card-title {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .img {
+      width: 105.3%;
+    }
+    mat-card-actions {
+      display: flex;
+      justify-content: flex-end;
+      .btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
