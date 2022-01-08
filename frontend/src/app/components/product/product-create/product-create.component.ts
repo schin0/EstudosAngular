@@ -20,7 +20,10 @@ export class ProductCreateComponent implements OnInit {
 
   product: Product = {
     name: '',
-    price: 0
+    price: 0,
+    urlImg: '',
+    descricaoImg: '',
+    descricaoProduto: ''
   }
 
   criarProduto(): void {
