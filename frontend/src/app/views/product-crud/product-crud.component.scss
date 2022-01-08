@@ -21,9 +21,13 @@ section {
       display: flex;
       justify-content: space-between;
       .btns {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .linkProduto {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
       }
     }
   }
