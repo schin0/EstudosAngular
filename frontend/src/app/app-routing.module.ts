@@ -8,6 +8,7 @@ import { CarrinhoComponent } from './views/carrinho/carrinho.component';
 import { VendasComponent } from './views/vendas/vendas.component';
 import { MeuPerfilComponent } from './views/meu-perfil/meu-perfil.component';
 import { DevsComponent } from './views/desenvolvedores/devs/devs.component';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: "products",
     component: ProductCrudComponent
+  },
+  {
+    path: "products/criar",
+    component: ProductCreateComponent
   },
   {
     path: "perfil",

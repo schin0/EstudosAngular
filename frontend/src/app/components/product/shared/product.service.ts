@@ -19,4 +19,19 @@ export class ProductService {
   ler(): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseURL);
   }
+
+  lerPeloId(id: number): Observable<Product> {
+    const url = `${this.baseURL}/${id}`;
+    return this.http.get<Product>(url);
+  } 
+
+  editar(product: Product): Observable<Product> {
+    const url = `${this.baseURL}/${product}`;
+    return this.http.put<Product>(url, product);
+  }
+
+  excluir(id: number): Observable<Product> {
+    const url = `${this.baseURL}/${id}`;
+    return this.http.delete<Product>(url);
+  }
 }

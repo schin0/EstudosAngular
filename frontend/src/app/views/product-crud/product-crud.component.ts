@@ -16,7 +16,6 @@ export class ProductCrudComponent implements OnInit {
   ngOnInit(): void {
     this.productService.ler().subscribe(products => {
       this.products = products;
-      console.log(products);
     });
   };
 }
