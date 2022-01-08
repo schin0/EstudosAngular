@@ -21,7 +21,7 @@
     <!-- Date Column -->
     <ng-container matColumnDef="date">
       <th mat-header-cell *matHeaderCellDef>Data de cadastro</th>
-      <td mat-cell *matCellDef="let row">{{row.date}}11/01/2021</td>
+      <td mat-cell *matCellDef="let row">{{row.date}}</td>
     </ng-container>
 
     <!-- qtdVendas Column -->
@@ -36,7 +36,7 @@
     <ng-container matColumnDef="view">
       <th mat-header-cell *matHeaderCellDef>Visualizar produto</th>
       <td mat-cell *matCellDef="let row">
-        <a routerLink="">
+        <a routerLink="/products/visualizar/{{row.id}}">
           <i class="material-icons">
             visibility
           </i>

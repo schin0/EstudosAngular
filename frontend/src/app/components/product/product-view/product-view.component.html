@@ -1,5 +1,5 @@
 <section>
-  <mat-card class="card-product" *ngFor="let product of products">
+  <mat-card class="card-product">
     <mat-card-header>
       <mat-card-title>{{ product.name }}</mat-card-title>
       <mat-card-subtitle>R$ {{ product.price }}</mat-card-subtitle>
@@ -11,13 +11,6 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button class="btns">
-        <a routerLink="/products/visualizar/{{product.id}}" class="linkProduto">
-          <i class="material-icons">
-            visibility
-          </i>
-        </a>
-      </button>
       <button mat-button class="btns">
         <i class="material-icons">
           shopping_cart

@@ -1,9 +1,8 @@
 section {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   .card-product {
-    width: 205px;
+    width: 600px;
     margin: 15px;
     mat-card-header {
       display: flex;
@@ -15,19 +14,15 @@ section {
       font-size: 0.9rem;
     }
     .img {
-      width: 115%;
+      width: 105.3%;
     }
     mat-card-actions {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       .btns {
-        .linkProduto {
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

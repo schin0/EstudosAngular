@@ -38,6 +38,7 @@ import { MatSortModule } from '@angular/material/sort';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { ProductViewComponent } from './components/product/product-view/product-view.component';
 
 registerLocaleData(localePt);
 
@@ -57,7 +58,8 @@ registerLocaleData(localePt);
     CarrinhoComponent,
     VendasComponent,
     ProductCreateComponent,
-    TesteComponent
+    TesteComponent,
+    ProductViewComponent
   ],
   imports: [
     BrowserModule,
