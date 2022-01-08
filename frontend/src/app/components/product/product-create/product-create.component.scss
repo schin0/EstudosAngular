@@ -1,6 +1,16 @@
 form {
   display: flex;
   flex-direction: column;
+  .campos {
+    display: flex;
+    align-items: center;
+    .icones {
+      margin-right: 1vw;
+    }
+    mat-form-field {
+      width: 100%;
+    }
+  }
 }
 
 button {

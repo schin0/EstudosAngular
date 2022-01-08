@@ -1,12 +1,46 @@
 <mat-card>
   <mat-card-title>Cadastrar Produto</mat-card-title>
   <form>
-    <mat-form-field>
-      <input matInput placeholder="Nome" [(ngModel)]="product.name" name="Nome">
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="Preço">
-    </mat-form-field>
+    <div class="campos">
+      <i class="material-icons icones">
+        person
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="Nome" [(ngModel)]="product.name" name="Nome">
+      </mat-form-field>
+    </div>
+    <div class="campos">
+      <i class="material-icons icones">
+        attach_money
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="Preço">
+      </mat-form-field>
+    </div>
+    <div class="campos">
+      <i class="material-icons icones">
+        link
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="URL da imagem" [(ngModel)]="product.urlImg" name="URLImg" type="url">
+      </mat-form-field>
+    </div>
+    <div class="campos">
+      <i class="material-icons icones">
+        description
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="Descição da Imagem" [(ngModel)]="product.descricaoImg" name="Descrição da Imagem" type="url">
+      </mat-form-field>
+    </div>
+    <div class="campos">
+      <i class="material-icons icones">
+        description
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="Descição do Produto" [(ngModel)]="product.descricaoProduto" name="Descição do Produto" type="url">
+      </mat-form-field>
+    </div>
   </form>
   <button mat-raised-button (click)="criarProduto()" color="basic">
     Cadastrar

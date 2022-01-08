@@ -4,6 +4,9 @@ section {
   .card-product {
     width: 600px;
     margin: 15px;
+    .vermelho {
+      color: var(--vermelho);
+    }
     mat-card-header {
       display: flex;
       justify-content: center;
