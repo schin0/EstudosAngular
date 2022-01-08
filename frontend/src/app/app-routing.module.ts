@@ -9,6 +9,7 @@ import { VendasComponent } from './views/vendas/vendas.component';
 import { MeuPerfilComponent } from './views/meu-perfil/meu-perfil.component';
 import { DevsComponent } from './views/desenvolvedores/devs/devs.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductViewComponent } from './components/product/product-view/product-view.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: "products/criar",
     component: ProductCreateComponent
+  },
+  {
+    path: "products/visualizar/:id",
+    component: ProductViewComponent
   },
   {
     path: "perfil",
