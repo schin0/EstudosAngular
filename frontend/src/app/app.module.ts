@@ -19,6 +19,9 @@ import { VendasComponent } from './views/vendas/vendas.component';
 import { MeuPerfilComponent } from './views/meu-perfil/meu-perfil.component';
 import { SobreComponent } from './views/sobre/sobre.component';
 import { CarrinhoComponent } from './views/carrinho/carrinho.component';
+import { ProductViewComponent } from './components/product/product-view/product-view.component';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
 // Material:
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -38,7 +41,6 @@ import { MatSortModule } from '@angular/material/sort';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
-import { ProductViewComponent } from './components/product/product-view/product-view.component';
 
 registerLocaleData(localePt);
 
@@ -59,7 +61,9 @@ registerLocaleData(localePt);
     VendasComponent,
     ProductCreateComponent,
     TesteComponent,
-    ProductViewComponent
+    ProductViewComponent,
+    ProductUpdateComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,

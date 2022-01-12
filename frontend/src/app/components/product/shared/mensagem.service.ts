@@ -8,11 +8,12 @@ export class MensagemService {
 
   constructor(private snackBar: MatSnackBar) { }
 
-  mostrar(msg: string): void {
+  mostrar(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'X', {
       duration: 3000,
       horizontalPosition: 'right',
-      verticalPosition: 'top'
+      verticalPosition: 'top',
+      panelClass: isError ? ['msg-error'] : ['msg-sucess']
     });
   };
 }

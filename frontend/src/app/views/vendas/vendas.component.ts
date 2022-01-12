@@ -1,3 +1,4 @@
+import { HeaderService } from './../../components/product/shared/header.service';
 import { ProductService } from './../../components/product/shared/product.service';
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/components/product/shared/product.model';
@@ -10,9 +11,16 @@ import { Product } from 'src/app/components/product/shared/product.model';
 export class VendasComponent implements OnInit {
 
   products: Product[] = [];
-  displayedColumns = ['id', 'name', 'price', 'date', 'qtdVendas', 'view']
+  displayedColumns = ['id', 'name', 'price', 'date', 'qtdVendas', 'view', 'edit', 'delete']
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService,
+    private headerService: HeaderService) {
+      headerService.headerData = {
+        title: "Vendas",
+        icon: "paid",
+        routeUrl: "/vendas"
+      }
+    }
 
   ngOnInit(): void {
     this.productService.ler().subscribe(products => {

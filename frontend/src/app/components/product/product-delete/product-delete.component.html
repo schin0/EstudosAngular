@@ -1,0 +1,51 @@
+<mat-card>
+  <mat-card-title>Excluir produto</mat-card-title>
+  <form>
+    <div class="campos">
+      <i class="material-icons icones">
+        person
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="Nome" [value]="product.name" name="Nome" disabled>
+      </mat-form-field>
+    </div>
+    <div class="campos">
+      <i class="material-icons icones">
+        attach_money
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="Preço (R$)" [value]="product.price" name="Preço" disabled>
+      </mat-form-field>
+    </div>
+    <div class="campos">
+      <i class="material-icons icones">
+        link
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="URL da imagem" [value]="product.urlImg" name="URLImg" type="url" disabled>
+      </mat-form-field>
+    </div>
+    <div class="campos">
+      <i class="material-icons icones">
+        description
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="Descição da Imagem" [value]="product.descricaoImg" name="Descrição da Imagem" type="url" disabled>
+      </mat-form-field>
+    </div>
+    <div class="campos">
+      <i class="material-icons icones">
+        description
+      </i>
+      <mat-form-field>
+        <input matInput placeholder="Descição do Produto" [value]="product.descricaoProduto" name="Descição do Produto" type="url" disabled>
+      </mat-form-field>
+    </div>
+  </form>
+  <button mat-raised-button (click)="deleteProduto()" color="basic">
+    Excluir
+  </button>
+  <button mat-raised-button (click)="cancelar()" color="warn">
+    Cancelar
+  </button>
+</mat-card>

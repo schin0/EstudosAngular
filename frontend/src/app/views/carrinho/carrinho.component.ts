@@ -1,3 +1,4 @@
+import { HeaderService } from './../../components/product/shared/header.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarrinhoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private headerService: HeaderService) {
+    headerService.headerData = {
+      title: "Carrinho de compras",
+      icon: "shopping_cart",
+      routeUrl: "/carrinho"
+    }
+  }
 
   ngOnInit(): void {
   }
