@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "name": "Osso para cachorro",
+      "name": "Osso",
       "price": 4.5,
       "urlImg": "https://www.petlove.com.br/images/products/216347/large/Osso_N%C3%B3_4.5_Petisc%C3%A3o_3106508_1.jpg?1627695263",
       "descricaoImg": "Osso para cachorro",
@@ -27,26 +27,10 @@
     {
       "name": "Coleira",
       "price": "34.99",
-      "id": 4,
-      "urlImg": "https://www.petelegante.com.br/media/catalog/product/c/o/coleira_vermelha_para_cachorro_1_1.jpg",
-      "descricaoImg": "Coleira para pet",
-      "descricaoProduto": "Coleira pequena para pet."
-    },
-    {
-      "name": "Coleira",
-      "price": "34.99",
       "id": 5,
       "urlImg": "https://www.petelegante.com.br/media/catalog/product/c/o/coleira_vermelha_para_cachorro_1_1.jpg",
       "descricaoImg": "Coleira para pet",
       "descricaoProduto": "Coleira pequena para pet."
-    },
-    {
-      "id": 6,
-      "name": "Shampoo pet",
-      "price": 5.7,
-      "urlImg": "https://www.petlove.com.br/images/products/202053/large/Shampoo_Pet_Society_Beeps_Neutro_3110151.jpg?1627649082",
-      "descricaoImg": "Shampoo para Pet Filhote",
-      "descricaoProduto": "Shampoo destinado para os Pets filhotes de até 6 meses de vida."
     }
   ]
 }
