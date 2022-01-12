@@ -13,3 +13,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .marrom {
   color: var(--marrom);
 }
+
+.msg-sucess {
+  background-color: #28a745;
+  color: white;
+}
+
+.msg-error {
+  background-color: var(--vermelho);
+  color: white;
+}
