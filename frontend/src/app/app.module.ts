@@ -41,6 +41,7 @@ import { MatSortModule } from '@angular/material/sort';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { ProductGetCComponent } from './components/product/product-get-c/product-get-c.component';
 
 registerLocaleData(localePt);
 
@@ -63,7 +64,8 @@ registerLocaleData(localePt);
     TesteComponent,
     ProductViewComponent,
     ProductUpdateComponent,
-    ProductDeleteComponent
+    ProductDeleteComponent,
+    ProductGetCComponent
   ],
   imports: [
     BrowserModule,
