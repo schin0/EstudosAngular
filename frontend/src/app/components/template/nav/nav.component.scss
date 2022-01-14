@@ -1,7 +1,9 @@
 .nav {
+  background-color: var(--marromescuro);
   width: 200px;
   .item i {
     margin-right: 10px;
+    color: var(--marromescuro2);
   }
 }
 .content {

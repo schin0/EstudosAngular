@@ -1,18 +1,28 @@
-form {
-  display: flex;
-  flex-direction: column;
-  .campos {
+mat-card {
+  background-color: var(--marromescuro2);
+  form {
     display: flex;
-    align-items: center;
-    .icones {
-      margin-right: 1vw;
-    }
-    mat-form-field {
-      width: 100%;
+    flex-direction: column;
+    .campos {
+      display: flex;
+      align-items: center;
+      .icones {
+        margin-right: 1vw;
+      }
+      mat-form-field {
+        width: 100%;
+      }
     }
   }
 }
 
 button {
   margin: 15px 15px 0 0;
+}
+
+.btn1 {
+  background-color: var(--marromescuro);
+}
+.btn2 {
+  background-color: var(--vermelhoclaro);
 }

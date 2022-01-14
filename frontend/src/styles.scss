@@ -2,8 +2,16 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 :root {
-  --marrom: brown;
+  --marrom: #765C4B;
+  --marromacidentado: #776960;
+  --marromescuro: #634F46;
+  --marromescuro2: #392620;
+  --marromclaro: #A27F5F;
+  --marromamendoado: #8B6759;
+  --marromabordo: #7E564A;
   --vermelho: red;
+  --vermelhoclaro: #ff5656;
+  --verde: #28a745;
 }
 
 .vertical-meio {

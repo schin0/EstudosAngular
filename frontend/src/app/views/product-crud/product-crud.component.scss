@@ -3,8 +3,10 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   .card-product {
+    background-color: var(--marromescuro2);
     width: 205px;
     margin: 15px;
+    padding-bottom: 3rem;
     mat-card-header {
       display: flex;
       justify-content: center;
@@ -15,12 +17,22 @@ section {
       font-size: 0.9rem;
     }
     .img {
-      width: 115%;
+      width: 116%;
+      height: 60%;
     }
     mat-card-actions {
+      position:absolute;
       display: flex;
       justify-content: space-between;
+      bottom:0; 
+      margin-bottom: 1rem;
       .btns {
+        .iconView {
+          color: var(--marromclaro);
+        }
+        .iconCar {
+          color: var(--verde);
+        }
         .linkProduto {
           text-decoration: none;
           display: flex;
@@ -28,6 +40,9 @@ section {
           justify-content: center;
           color: white;
         }
+      }
+      .icon {
+        margin-right: 5rem !important;
       }
     }
   }

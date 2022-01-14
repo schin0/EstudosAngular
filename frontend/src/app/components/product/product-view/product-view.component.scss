@@ -4,8 +4,9 @@ section {
   .card-product {
     width: 600px;
     margin: 15px;
+    background-color: var(--marromescuro2);
     .vermelho {
-      color: var(--vermelho);
+      color: var(--vermelhoclaro);
     }
     mat-card-header {
       display: flex;
@@ -17,7 +18,7 @@ section {
       font-size: 0.9rem;
     }
     .img {
-      width: 105.3%;
+      width: 106%;
     }
     mat-card-actions {
       display: flex;
