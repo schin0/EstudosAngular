@@ -5,15 +5,18 @@
   justify-content: flex-end;
   min-height: 30px; 
   height: 30px;
+  background-color: var(--marromacidentado);
   span {
     font-size: 1rem;
     font-weight: 300;
   }
   .logo {
+    color: var(--marromescuro2);
     margin-right: 10px;
   }
   .devs {
-    color: var(--marrom);
+    color: var(--marromescuro2);
+    font-weight: 400;
     cursor: pointer;
     text-decoration: none;
   }

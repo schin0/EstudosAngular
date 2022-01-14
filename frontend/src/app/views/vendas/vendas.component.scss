@@ -1,9 +1,17 @@
 .divTable {
   text-align: center;
   table {
+    background-color: var(--marromescuro) !important;
     width: 100%;
     th {
       text-align: center;
+      background-color: var(--marromescuro2);
+    }
+    a {
+      color: var(--marromescuro2);
+    }
+    a:visited {
+      color: var(--marromclaro);
     }
   }
 }

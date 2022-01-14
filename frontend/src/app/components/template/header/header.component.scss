@@ -1,8 +1,10 @@
 .header {
   display: flex;
   align-items: center;
+  background-color: var(--marromescuro2);
   .logo {
-    max-width: 32px;
+    max-width: 38px;
+    color: #fff;
     margin-right: 25px;
   }
   .titulo {
@@ -10,7 +12,7 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: white;
+      color: #fff;
     }
   }
 }
