@@ -1,8 +1,8 @@
 export interface Product {
-  id?: number
+  id?: string
   name: string
   price: number
-  urlImg?: string
-  descricaoImg?: string
-  descricaoProduto?: string
+  urlImg: string
+  descricaoImg: string
+  descricaoProduto: string
 }

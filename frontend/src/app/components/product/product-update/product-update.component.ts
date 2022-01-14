@@ -11,8 +11,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  product: Product = { name: '', price: 0 };
-  id: number = 0;
+  product: Product = { name: '', price: 0.0, urlImg: '', descricaoImg: '', descricaoProduto: '' };
+  id: string = '';
 
   constructor(private productService: ProductService,
     private mensagem: MensagemService,
@@ -21,13 +21,13 @@ export class ProductUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params["id"];
-    this.productService.lerPeloId(this.id).subscribe(product => {
+    this.productService.lerPeloId(`${this.id}`).subscribe(product => {
       this.product = product;
     });
   }
 
   updateProduto(): void {
-    this.productService.editar(this.id, this.product).subscribe(() => {
+    this.productService.editar(`${this.id}`, this.product).subscribe(() => {
       this.mensagem.mostrar('Produto editado com sucesso!');
       this.router.navigate(['/products']);
     })

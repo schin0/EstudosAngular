@@ -29,7 +29,7 @@ export class ProductService {
     );
   }
 
-  lerPeloId(id: number): Observable<Product> {
+  lerPeloId(id: string): Observable<Product> {
     const url = `${this.baseURL}/${id}`;
     return this.http.get<Product>(url).pipe(
       map((obj) => obj),
@@ -37,7 +37,7 @@ export class ProductService {
     );
   }
 
-  editar(idProduct: number, product: Product): Observable<Product> {
+  editar(idProduct: string, product: Product): Observable<Product> {
     const url = `${this.baseURL}/${idProduct}`;
     return this.http.put<Product>(url, product).pipe(
       map((obj) => obj),
@@ -45,7 +45,7 @@ export class ProductService {
     );
   }
 
-  excluir(id: number): Observable<Product> {
+  excluir(id: string): Observable<Product> {
     const url = `${this.baseURL}/${id}`;
     return this.http.delete<Product>(url).pipe(
       map((obj) => obj),

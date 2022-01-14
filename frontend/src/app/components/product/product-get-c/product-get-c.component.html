@@ -1,0 +1,28 @@
+<section>
+  <mat-card class="card-product" *ngFor="let produtos of produtos">
+    <mat-card-header>
+      <mat-card-title>{{ produtos.name }}</mat-card-title>
+      <mat-card-subtitle>R$ {{ produtos.price }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="img" src="{{ produtos.urlImg }}" alt="{{ produtos.descricaoImg }}">
+    <mat-card-content>
+      <p>
+        {{ produtos.descricaoProduto }}
+      </p>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-button class="btns">
+        <a routerLink="/produtoss/visualizar/{{produtos.id}}" class="linkProduto">
+          <i class="material-icons">
+            visibility
+          </i>
+        </a>
+      </button>
+      <button mat-button class="btns">
+        <i class="material-icons">
+          shopping_cart
+        </i>
+      </button>
+    </mat-card-actions> -->
+  </mat-card>
+</section>
