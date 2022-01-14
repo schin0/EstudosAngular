@@ -1,5 +1,3 @@
-import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
-import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -12,6 +10,9 @@ import { MeuPerfilComponent } from './views/meu-perfil/meu-perfil.component';
 import { DevsComponent } from './views/desenvolvedores/devs/devs.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductViewComponent } from './components/product/product-view/product-view.component';
+import { ProductGetCComponent } from './components/product/product-get-c/product-get-c.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: "products/visualizar/:id",
     component: ProductViewComponent
+  },
+  {
+    path: "products/listar",
+    component: ProductGetCComponent
   },
   {
     path: "perfil",
