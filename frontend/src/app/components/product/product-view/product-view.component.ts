@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-view.component.scss']
 })
 export class ProductViewComponent implements OnInit {
-  product: Product = { name: '', price: 0 };
+  product: Product = { name: '', price: 0.0, urlImg: '', descricaoImg: '', descricaoProduto: '' };
 
   constructor(
     private productService: ProductService,
